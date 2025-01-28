@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", serif;
+  background-color: #f9faff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: calc(1440px - 225px);
+  padding: 30px 100px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  font-family: Rubik;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 30.81px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #3d3d3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.list li a {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18.23px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #3d3d3f;
+}
+
+.contact-btn {
+  padding: 10px 20px;
+  background: #f35f2f;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18.23px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #fff;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.contact-btn:hover {
+  color: #f35f2f;
+  background: #fff;
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px 30px;
+  }
+  .list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .contact-btn {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    padding: 4px;
+    font-size: 35px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    color: #3d3d3f;
+  }
+}
+
+/* ! MAIN */
+
+.herro-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.herro-wrapper-info {
+  width: 50%;
+}
+.herro-wrapper-info h1 {
+  font-family: Rubik;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 85.32px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #3d3d3f;
+}
+.herro-wrapper-info p {
+  font-family: Rubik;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.7px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #3d3d3f;
+  margin: 20px 0;
+}
+.herro-wrapper-info a {
+  padding: 10px 20px;
+  background: #f35f2f;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18.23px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #fff;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.herro-wrapper-info a:hover {
+  color: #f35f2f;
+  background: #fff;
+}
+
+.herro-wrapper-img {
+  width: 50%;
+}
+.herro-wrapper-img img {
+  width: 100%;
+}
+
+/* PROVIDE SECTION */
+
+.provide-wrapper h2 {
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52.08px;
+  color: #3d3d3f;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.provide-cards {
+  border: 2px solid #ebebebcc;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.provide-card {
+  text-align: center;
+}
+.provide-card h4 {
+  font-family: DM Sans;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46.87px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #3d3d3f;
+  margin: 5px 0;
+}
+
+.provide-card p {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.25px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #3d3d3f;
+}
